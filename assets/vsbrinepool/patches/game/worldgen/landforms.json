@@ -1,0 +1,17 @@
+[
+    {
+        "op": "add",
+        "path": "/variants/-",
+        "value": {
+            "code": "brinepool",
+            "comment": "A shallow, flat depression filled with brine (salty water). Rare feature found in low-lying areas.",
+            "hexcolor": "#4a7a8a",
+            "weight": 1,
+            "useClimateMap": false,
+            "terrainOctaves":          [ 0,   0,   0,   0,   0.2, 0.5, 0,   0,   0,   0   ],
+            "terrainOctaveThresholds": [ 0,   0,   0,   0,   0,   0,   0,   0,   0,   0   ],
+            "terrainYKeyPositions":    [ 0,   0.33, 0.44, 0.47, 0.50, 0.54, 0.8, 1  ],
+            "terrainYKeyThresholds":   [ 1,   1,    0.9,  0.5,  0.1,  0,    0,   0  ]
+        }
+    }
+]

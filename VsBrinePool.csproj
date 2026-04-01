@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>VsBrinePool</RootNamespace>
+    <AssemblyName>VsBrinePool</AssemblyName>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!--
+    Reference the Vintage Story API from the game installation directory.
+    Set the VINTAGE_STORY environment variable (or update the HintPath) to point
+    to your Vintage Story installation, e.g.:
+      Windows: C:\Program Files\Vintage Story
+      Linux:   /opt/vintagestory
+  -->
+  <ItemGroup>
+    <Reference Include="VintagestoryAPI">
+      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Include all JSON asset files in the build output -->
+  <ItemGroup>
+    <None Include="assets/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="modinfo.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

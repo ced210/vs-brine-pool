@@ -1,0 +1,21 @@
+# Build artifacts
+bin/
+obj/
+*.user
+
+# NuGet
+*.nupkg
+
+# Visual Studio
+.vs/
+*.suo
+*.sln.docstates
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Zip releases
+releases/
