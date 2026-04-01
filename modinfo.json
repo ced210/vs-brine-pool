@@ -1,0 +1,11 @@
+{
+    "type": "code",
+    "modid": "vsbrinepool",
+    "name": "Brine Pool",
+    "description": "Adds brine pool landforms to the world — shallow depressions filled with salty water.",
+    "authors": [ "ced210" ],
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.19.0"
+    }
+}

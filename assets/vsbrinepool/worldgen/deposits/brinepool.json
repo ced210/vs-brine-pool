@@ -1,0 +1,26 @@
+{
+    "code": "brinepool-water",
+    "comment": "Places still water inside brine pool depressions near sea level.",
+    // worldGenYOffsetMin/Max define a ±1-block search window around sea level so the
+    // water fill aligns precisely with the shallow depression created by the landform.
+    "worldGenYOffsetMin": -1,
+    "worldGenYOffsetMax":  1,
+    "placement": "surface",
+    "climate": {
+        "minTemp": -40,
+        "maxTemp":  50,
+        "minRain":   0,
+        "maxRain":   1
+    },
+    "withBlockBelow": [
+        "game:rock-*",
+        "game:sand-*",
+        "game:gravel-*",
+        "game:soil-*"
+    ],
+    "blocksbytype": {
+        "*": "game:water-still-7"
+    },
+    "quantity": { "avg": 16, "var": 4 },
+    "allowedLandforms": [ "brinepool" ]
+}
